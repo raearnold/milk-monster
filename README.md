@@ -9,3 +9,7 @@ Is react overkill for this? Detrimental from a perf standpoint? Yes. Am I just t
 App spun up with create-react-app and hacked together.
 
 I'm a terrible developer who hasn't written any unit tests for the actual logic-heavy portion of this app.
+
+### Deployment
+
+`npm run build` creates a production build in `/docs` (via a script hack that works only on MacOS). GH Pages serves from there in this repo.
