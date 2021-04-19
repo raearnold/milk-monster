@@ -1,9 +1,12 @@
 :root {
   --color-brand: #639;
-  --color-accent: #ab8fc7;
+  --color-brand-light: #ab8fc7;
+  --color-accent: #84BC9C;
+  --color-pop: #f34213;
+  --color-base: #000f08;
 
   --input-background: #fffc;
-  --input-background-accent: black;
+  --input-background-accent: var(--color-base);
 
   --vertical-spacing: 4vh;
   --vertical-spacing-large: calc(var(--vertical-spacing) * 2);
@@ -68,7 +71,7 @@ output {
   font-size: 2rem;
   text-decoration: underline;
   text-decoration-thickness: 1vh;
-  text-decoration-color: var(--color-accent);
+  text-decoration-color: var(--color-brand-light);
 }
 
 output ~ small {
@@ -96,7 +99,7 @@ input:focus {
 }
 
 fieldset {
-  border-color: var(--color-accent);
+  border-color: var(--color-brand-light);
   border-style: solid;
 }
 
