@@ -109,3 +109,12 @@ fieldset {
   font-size: 3rem;
   padding-right: 1rem;
 }
+
+.amazon-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.amazon-links > div {
+  margin: 0 1rem 1rem;
+}
