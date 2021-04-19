@@ -38,7 +38,7 @@ function App() {
       </main>
       <footer>
         <p>This is not medical advice. Please talk to your pediatrician or a certified lactation consultant if you have concerns about how much to feed your baby.</p>
-        <p>Created with a bit of sleep-deprivation by <a href="http://raearnold.com">Rachael Arnold</a>. View code on <a href="">Github NEED LINK</a>.</p>
+        <p>Created with a bit of sleep-deprivation by <a href="http://raearnold.com">Rachael Arnold</a>. View code on <a href="https://github.com/raearnold/milk-monster">Github</a>.</p>
       </footer>
     </>
   );
