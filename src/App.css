@@ -1,0 +1,111 @@
+:root {
+  --color-brand: #639;
+  --color-accent: #ab8fc7;
+
+  --input-background: #fffc;
+  --input-background-accent: black;
+
+  --vertical-spacing: 4vh;
+  --vertical-spacing-large: calc(var(--vertical-spacing) * 2);
+}
+
+/* Structure */
+body {
+  text-align: center;
+}
+
+main {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 .5rem;
+}
+
+main, section {
+  margin-top: var(--vertical-spacing-large);
+}
+
+header {
+  padding: .5rem 1rem;
+}
+
+footer {
+  font-size: smaller;
+  margin-top: var(--vertical-spacing-large);
+  padding: 1rem;
+}
+
+.form-group {
+  margin-bottom:  var(--vertical-spacing);
+}
+
+/* Typography */
+h1 {
+  margin: 0;
+}
+h1 small {
+  display: block;
+  font-size: .4em;
+}
+
+h2 { 
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Style */
+header, footer {
+  background: var(--color-brand);
+  color: white;
+}
+header a, footer a {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+output {
+  display: block;
+  font-size: 2rem;
+  text-decoration: underline;
+  text-decoration-thickness: 1vh;
+  text-decoration-color: var(--color-accent);
+}
+
+output ~ small {
+  display: block;
+}
+
+input {
+  border: none;
+  background: white;
+  background: linear-gradient(0deg,var(--input-background-accent) 0%, var(--input-background-accent) .5vh, var(--input-background) .5vh, var(--input-background));
+
+  font-size: 1.5rem;
+}
+
+input:focus {
+  --input-background: #fffa;
+  --input-background-accent: var(--color-brand);
+  
+  outline: none;
+}
+
+[type="number"] {
+  max-width: 5ch;
+  text-align: center;
+}
+
+fieldset {
+  border-color: var(--color-accent);
+  border-style: solid;
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.result i {
+  font-size: 3rem;
+  padding-right: 1rem;
+}
