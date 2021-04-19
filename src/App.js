@@ -6,6 +6,7 @@ function App() {
   return (
     <>
       <header>
+        <img src="./milk-monster-logo.png" width="250" height="250" rel="logo" />
         <h1>
           Milk Monster 
           <small>A Calculator for Feeding Expressed Breastmilk</small>
@@ -33,8 +34,6 @@ function App() {
           <p>After 6 months of age, most children begin eating solids, which reduces their need for breastmilk. Please talk to an expert about what your baby needs.</p>
           <p>All calculations assume the baby being fed was born at term. Premature babies may have vastly different needs (or the calculations may only apply to adjusted age, not actual age).</p>
         </section>
-        {/* Before that, some calculate the amount baby needs in a 24 hour period based on weight – which is about 2.5 ounces of breast milk per lb of bodyweight until they reach about 10 pounds (and this is after about the first week of life, where baby needs significantly less). If your baby isn’t quite four weeks yet, you can use the calculator at the bottom. */}
-
       </main>
       <footer>
         <p>This is not medical advice. Please talk to your pediatrician or a certified lactation consultant if you have concerns about how much to feed your baby.</p>

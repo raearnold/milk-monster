@@ -29,6 +29,32 @@ main, section {
 
 header {
   padding: .5rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+[rel="logo"] {
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media screen  and (max-width: 800px) {
+  [rel="logo"] {
+    max-width: 100px;
+    max-height: 100px;
+  }
+}
+@media screen  and (min-width: 801px) {
+  [rel="logo"] {
+    width: calc((100% - 700px) / 2);
+    max-width: 1024px;
+    min-width: 100px;
+  }
+}
+@media screen  and (max-width: 500px) {
+  header {
+    padding-left: 100px;
+  }
 }
 
 footer {
@@ -57,11 +83,10 @@ h2 {
 
 /* Style */
 header, footer {
-  background: var(--color-brand);
-  color: white;
+  background: var(--color-accent);
 }
 header a, footer a {
-  color: white;
+  color: black;
   font-weight: bold;
   text-decoration: underline;
 }
@@ -107,6 +132,8 @@ fieldset {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 2px solid var(--color-accent);
+  padding: .5rem;
 }
 .result i {
   font-size: 3rem;
